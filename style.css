@@ -109,3 +109,20 @@ h1{
 	background: url(images/torre.jpg) no-repeat;
 	background-size: cover; 
 }
+
+
+
+/* responsividade */
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 395px;
+        height: 500px;
+    }
+    .img img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .links li{
+        margin-bottom: 5px;
+    }
+}
