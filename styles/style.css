@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* seletor global */
+
+
+html{
+    --black: #0D114F;
+    --white: #FAFAFA;
+    --red: #E83F5B;
+    --purple: #7159C1;
+
+
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    height: 100%;
+
+    background: var(--purple)
+}
+
+body, h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+   
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 605px;
+    max-width: min(122rem, 90%);
+    height: 80rem;
+    
+    margin: 40px;
+    /* background-color: rgba(24, 13, 34, 0.678); */
+    background: var(--white);
+    
+}
+
+.img {
+    width: 100%;
+    height: 220px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5rem;
+
+
+}
+
+.img img {
+    width: 13.5rem;
+    height: 13.5rem;
+    border-radius: 50%;
+    border: 2px solid  var(--purple);
+    margin-top: 2rem;
+    
+}
+
+.container .img h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(20px, 5vw, 1.8rem);
+    
+    color: var(--purple);
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--purple);
+
+}
+
+.container .img h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: var(--purple);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.container .description {
+    width: 90%;
+    margin: auto;
+    color: var(--purple);
+    text-align: justify;
+    padding: 1rem 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    
+}
+
+.links{
+  max-width: min(112rem, 90%);
+  height: 30rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.links .links-social {
+    width: 100%;
+    height: 5.5rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.links .links-social a {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+    font-size: 1.3rem;
+    
+}
+
+.links .links-social a:hover {
+
+    background: rgba(242, 223, 247, 0.822);
+    color: var(--purple);
+    border-radius: 8px;
+}
+
+.links .links-social a img {
+    width: 4rem;
+    margin: 0 1.5rem 0 1rem;
+}
+
+
+
+/* responsividade
+@media only screen and (max-width: 400px) {
+    .container {
+        width: 395px;
+        height: 90%;
+    }
+    .img img {
+        width: 9rem;
+        height: 9rem;
+    }
+    .links li{
+        margin-bottom: 5px;
+    }
+} */
+
+
+
+
+
+
+
+
+#bg {
+    grid-area: left;
+ 
+    background: url('/images/home-bg-img.svg') no-repeat top/contain;
+    background-position-x: -10rem;
+}
+
+
+
+
+/* create balls */
+.ball {
+    width: 21.2rem;
+    height: 21.2rem;
+    background: var(--white);
+    clip-path: circle();
+    opacity: 0.1;
+    position: fixed;
+}
+
+.ball.top {
+    top: -46rem;
+    width: 63.3rem;
+    right: -35rem;
+    height: 63.3rem;
+   
+}
+.ball.medium {
+    right: 20rem;
+}
+
+.ball.bottom {
+    
+    bottom: -15rem;
+    right: 5.6rem;
+}
+
+
+
